@@ -1,5 +1,4 @@
-name: Django                                  # workflow name
-
+name: Django 
 on:
   push:
     branches:                                 # similar to "only" in GitLab
@@ -26,3 +25,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: echo "This is a deploy step"
+ artifact:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo “hello” > hello.txt
