@@ -25,7 +25,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: echo "This is a deploy step"
- artifact:
+
+  artifact:
     runs-on: ubuntu-22.04
     steps:
       - run: echo “hello” > hello.txt
